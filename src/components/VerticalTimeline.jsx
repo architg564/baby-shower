@@ -11,7 +11,7 @@ const timelineEvents = [
     icon: <Flame size={17} />,
     desc: 'Chanting sacred Vedic mantras and offering oblations to Agni Dev to seek the Almighty’s divine blessings for the baby boy’s long life, wisdom, and vibrant health.',
     quote:
-      '“यत्र नार्यस्तु पूज्यन्ते रमन्ते तत्र देवताः • Like the sacred flame that purifies and illuminates, may divine grace guide our little prince toward truth, honour, and endless light.”'
+      '“दीर्घायुष्यं मस्तु • तेजस्वी भव • Like the sacred flame that purifies and illuminates, may divine grace bless our little prince with radiant health, wisdom, and boundless joy.”'
   },
   {
     time: '01:15 PM',

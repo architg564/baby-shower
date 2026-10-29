@@ -934,35 +934,150 @@ body::before {
   opacity: 0.85;
 }
 
-/* Responsive adjustments */
+.name-sep {
+  color: var(--moon-gold);
+  font-weight: 600;
+  margin: 0 4px;
+  display: inline-block;
+}
+
+/* Responsive mobile adjustments */
 @media (max-width: 600px) {
   .page-container {
-    padding: 0 12px;
+    padding: 0 10px;
+    margin: 12px auto 30px;
   }
-  .main-celebration-title {
-    font-size: 1.8rem;
+  .card-inner-frame {
+    padding: 22px 14px 20px;
+  }
+  .deity-shloka {
+    font-size: 0.95rem;
+  }
+  .charan-paduka {
+    font-size: 0.72rem;
+    padding: 3px 12px;
+  }
+  .divine-blessing-text {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  .role-label, .proud-label, .venue-label {
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
   }
   .grandparent-names {
     font-size: 1.25rem;
+    line-height: 1.4;
+    text-wrap: balance;
   }
   .parent-names {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-wrap: balance;
   }
-  .card-inner-frame {
-    padding: 24px 16px;
+  .cordial-request {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    padding: 0 4px;
+  }
+  .celebration-headline-container {
+    padding: 14px 10px;
+    margin-bottom: 18px;
+  }
+  .sub-celebration {
+    font-size: 0.74rem;
+    letter-spacing: 1.8px;
+  }
+  .main-celebration-title {
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+    line-height: 1.15;
+  }
+  .hindi-celebration-title {
+    font-size: 1.02rem;
+  }
+  .baby-welcome-note {
+    font-size: 1.18rem;
+    line-height: 1.35;
+    padding: 0 4px;
+  }
+  .date-spotlight-card {
+    padding: 10px 24px;
+    margin-bottom: 22px;
+  }
+  .date-huge-num {
+    font-size: 2.8rem;
+  }
+  .date-day {
+    font-size: 0.78rem;
+  }
+  .date-month-year {
+    font-size: 0.92rem;
+  }
+  .timeline-section-heading {
+    font-size: 1.25rem;
+    margin-bottom: 22px;
   }
   .timeline-wrapper {
-    padding-left: 10px;
+    padding-left: 8px;
   }
   .timeline-vertical-bar {
-    left: 26px;
+    left: 24px;
+    width: 3px;
   }
   .timeline-node {
-    width: 28px;
-    height: 28px;
-    font-size: 0.85rem;
+    width: 30px;
+    height: 30px;
+    font-size: 0.82rem;
+    margin-top: 8px;
+  }
+  .timeline-item {
+    gap: 14px;
+    margin-bottom: 24px;
   }
   .timeline-card {
-    padding: 16px 14px;
+    padding: 14px 13px;
+  }
+  .timeline-event-title {
+    font-size: 1.15rem;
+  }
+  .timeline-hindi-title {
+    font-size: 0.9rem;
+  }
+  .timeline-event-desc {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+  .timeline-quote-box {
+    font-size: 0.82rem;
+    line-height: 1.45;
+    padding: 7px 10px;
+  }
+  .venue-showcase-box {
+    padding: 14px 14px;
+    margin: 22px 0 18px;
+  }
+  .venue-name {
+    font-size: 1.28rem;
+  }
+  .venue-address {
+    font-size: 0.84rem;
+  }
+  .compliments-row {
+    font-size: 0.82rem;
+    gap: 8px;
+  }
+  .shanti-mantra {
+    font-size: 0.86rem;
+  }
+  .countdown-box {
+    padding: 6px 10px;
+    min-width: 58px;
+  }
+  .countdown-number {
+    font-size: 1.35rem;
+  }
+  .countdown-label {
+    font-size: 0.6rem;
   }
 }

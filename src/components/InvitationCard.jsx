@@ -77,7 +77,7 @@ export default function InvitationCard() {
           <div className="grandparents-block">
             <span className="role-label">Most Respected Grandparents</span>
             <h2 className="grandparent-names">
-              Smt. Mithlesh Raghav & Shri Satyabir Singh Raghav
+              Smt. Mithlesh Raghav <span className="name-sep">&</span> Shri Satyabir Singh Raghav
             </h2>
           </div>
 
@@ -96,7 +96,9 @@ export default function InvitationCard() {
           {/* Parents Block */}
           <div className="parents-block">
             <span className="proud-label">Heartily welcomed by the proud parents</span>
-            <h3 className="parent-names">Smt. Preeti Raghav & Shri Gaurav Raghav</h3>
+            <h3 className="parent-names">
+              Smt. Preeti Raghav <span className="name-sep">&</span> Shri Gaurav Raghav
+            </h3>
             <p className="baby-welcome-note">
               "A sweet bundle of joy has arrived to fill our hearts with laughter and our home with endless love."
             </p>
