@@ -164,98 +164,134 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(11, 26, 59, 0.35);
-  border: 1.5px solid rgba(249, 217, 118, 0.45);
-  border-radius: 22px;
-  padding: 14px 22px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), var(--card-glow);
-  max-width: 420px;
+  background: rgba(11, 26, 59, 0.42);
+  border: 1.5px solid rgba(249, 217, 118, 0.55);
+  border-radius: 24px;
+  padding: 16px 20px 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(249, 217, 118, 0.3);
+  max-width: 440px;
   width: 100%;
   cursor: pointer;
   flex-shrink: 0;
   margin-top: auto;
 }
 
-.wax-seal-btn {
-  width: 96px;
-  height: 96px;
+/* 3D Embossed Royal Golden Wax Seal */
+.royal-wax-seal {
+  width: 105px;
+  height: 105px;
   margin: 0 auto;
-  background: radial-gradient(circle at 35% 35%, #5ba3f5, #2a6dd9 65%, #1a4fa0 100%);
   border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #fff7d1 0%, #f9d976 22%, #e5a517 55%, #a6740c 85%, #6a4700 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3.5px solid var(--moon-gold);
-  box-shadow: 0 10px 30px rgba(42, 109, 217, 0.5), 0 0 25px rgba(249, 217, 118, 0.5);
+  border: 3px solid #ffea9f;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65), 0 0 25px rgba(249, 217, 118, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.8), inset 0 -3px 6px rgba(0, 0, 0, 0.55);
   cursor: pointer;
+  position: relative;
 }
 
-.seal-inner {
+.seal-outer-rim {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.seal-inner-disc {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(249, 217, 118, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: #fff;
+  box-shadow: inset 0 0 12px rgba(117, 80, 5, 0.6);
   user-select: none;
 }
 
-.seal-feet {
-  display: block;
-  font-size: 1.5rem;
-  line-height: 1;
+.seal-crown-icon {
+  color: #ffffff;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.8));
+  margin-bottom: 2px;
 }
 
-.seal-title {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 0.7rem;
-  letter-spacing: 1.5px;
-  color: var(--star-gold);
-  margin-top: 3px;
+.seal-hindi-name {
+  font-family: var(--font-hindi);
+  font-size: 0.88rem;
+  color: #ffffff;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95);
 }
 
-.seal-sub {
-  display: block;
-  font-size: 0.54rem;
-  letter-spacing: 1.5px;
-  color: var(--baby-blue-light);
-}
-
-.tap-hint-text {
+.seal-english-sub {
   font-family: var(--font-heading);
-  color: var(--star-gold);
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
-  margin: 10px 0 4px;
-  font-weight: 700;
-  text-shadow: 0 0 12px rgba(249, 217, 118, 0.7);
+  font-size: 0.56rem;
+  color: #ffe8a3;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-top: 2px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
-.baby-tagline-quote {
-  font-family: var(--font-script);
-  font-size: 1.15rem;
-  color: var(--baby-blue-light);
-  max-width: 380px;
-  margin: 0 auto 8px;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
-}
-
-.direct-view-link {
-  background: transparent;
-  border: none;
-  color: var(--baby-blue);
-  font-size: 0.82rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: underline;
+.seal-stars {
+  font-size: 0.5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
   opacity: 0.9;
-  transition: opacity 0.2s;
+  margin-top: 1px;
 }
 
-.direct-view-link:hover {
-  opacity: 1;
-  color: var(--star-gold);
+/* Seal Text & Action Button Group */
+.seal-text-group {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.royal-open-btn {
+  background: var(--gold-grad);
+  color: #0b1a3b;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  padding: 9px 24px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px rgba(249, 217, 118, 0.5), 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease;
+  margin-bottom: 8px;
+}
+
+.royal-open-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(249, 217, 118, 0.7);
+  filter: brightness(1.08);
+}
+
+.seal-hindi-couplet {
+  font-family: var(--font-hindi);
+  font-size: 0.88rem;
+  color: var(--baby-blue-light);
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 
 /* =====================================================================
@@ -269,46 +305,49 @@ body::before {
   padding: 0 16px;
 }
 
-.card-top-nav {
+/* Centered Hindi Family Title Banner */
+.family-banner-center {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 0 4px;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.back-cover-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(11, 26, 59, 0.65);
-  border: 1px solid var(--gold-border-soft);
-  color: var(--star-gold);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  font-family: var(--font-body);
-  font-weight: 600;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: all 0.2s ease;
-}
-
-.back-cover-btn:hover {
-  background: rgba(249, 217, 118, 0.2);
-  border-color: var(--moon-gold);
-  transform: translateX(-2px);
-}
-
-.family-badge {
+.family-badge-title {
   font-family: var(--font-hindi);
-  font-size: 0.95rem;
+  font-size: 1.45rem;
+  letter-spacing: 1.5px;
+  background: var(--gold-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+
+.banner-motif {
+  color: var(--moon-gold);
+  font-size: 1.15rem;
+  filter: drop-shadow(0 0 8px rgba(249, 217, 118, 0.6));
+}
+
+/* Top Deity Centered */
+.top-deities.single-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.deity-shloka-center {
+  font-family: var(--font-hindi);
   color: var(--star-gold);
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(249, 217, 118, 0.5);
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 14px rgba(249, 217, 118, 0.7), 0 2px 6px rgba(0, 0, 0, 0.85);
+  margin: 0;
 }
 
 /* =====================================================================
@@ -790,58 +829,63 @@ body::before {
    VENUE & FOOTER
    ===================================================================== */
 .venue-showcase-box {
-  background: rgba(11, 26, 59, 0.35);
-  border: 1px solid var(--gold-border-soft);
+  background: rgba(11, 26, 59, 0.4);
+  border: 1.5px solid var(--gold-border-soft);
   border-radius: 20px;
-  padding: 18px 22px;
+  padding: 20px 22px;
   margin: 28px 0 22px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+.venue-label-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--moon-gold);
+  margin-bottom: 8px;
 }
 
 .venue-label {
-  display: block;
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   letter-spacing: 2px;
-  color: var(--baby-blue);
+  color: var(--star-gold);
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 4px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .venue-name {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #ffffff;
   font-weight: 800;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(249, 217, 118, 0.4);
+  margin-bottom: 6px;
 }
 
-.venue-address {
-  font-size: 0.88rem;
+.venue-address-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.venue-address-line {
+  font-size: 1.05rem;
   color: var(--baby-blue-light);
-  margin: 4px 0 12px;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-.venue-map-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(142, 197, 252, 0.15);
-  border: 1px solid var(--baby-blue);
-  color: #ffffff;
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 0.84rem;
+.venue-address-line.city {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--moon-gold);
   font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.venue-map-link:hover {
-  background: var(--gold-grad);
-  color: #0b1a3b;
-  border-color: transparent;
+  letter-spacing: 1px;
 }
 
 .compliments-row {

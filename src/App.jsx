@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
 import AmbientStars from './components/AmbientStars';
 import HeroWaxSeal from './components/HeroWaxSeal';
 import InvitationCard from './components/InvitationCard';
@@ -48,23 +47,12 @@ export default function App() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
-            {/* Top Bar: Return to Cover & Family Badge */}
-            <div className="card-top-nav">
-              <button
-                className="back-cover-btn"
-                onClick={() => {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                  setIsUnveiled(false);
-                }}
-              >
-                <ArrowLeft size={15} />
-                <span>Return to Cover</span>
-              </button>
-
-              <div className="family-badge">
-                <span>॥ राघव परिवार निमंत्रण ॥</span>
-              </div>
-            </div>
+            {/* Centered Hindi Family Title */}
+            <header className="family-banner-center">
+              <span className="banner-motif">𑁍</span>
+              <h2 className="family-badge-title">॥ राघव परिवार निमंत्रण ॥</h2>
+              <span className="banner-motif">𑁍</span>
+            </header>
 
             {/* Transparent Luxury Invitation Card */}
             <InvitationCard />

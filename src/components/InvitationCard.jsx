@@ -23,10 +23,8 @@ export default function InvitationCard() {
       <div className="card-inner-frame">
         {/* Top Auspicious Invocations */}
         <header className="card-header">
-          <div className="top-deities">
-            <span className="deity-shloka">॥ श्री गणेशाय नमः ॥</span>
-            <span className="deity-divider">✦</span>
-            <span className="deity-shloka">॥ श्री बालगोपालाय नमः ॥</span>
+          <div className="top-deities single-center">
+            <h3 className="deity-shloka-center">॥ श्री गणेशाय नमः ॥</h3>
           </div>
 
           {/* Baby Prince Crown Emblem */}
@@ -118,18 +116,15 @@ export default function InvitationCard() {
 
         {/* Celebration Venue */}
         <div className="venue-showcase-box">
-          <span className="venue-label">CELEBRATION VENUE</span>
-          <h3 className="venue-name">Raghav Niwas</h3>
-          <p className="venue-address">Royal Heritage Enclave, Main City Road</p>
-          <a
-            href="https://maps.google.com/?q=Raghav+Niwas"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="venue-map-link"
-          >
+          <div className="venue-label-row">
             <MapPin size={15} />
-            <span>View on Google Maps</span>
-          </a>
+            <span className="venue-label">शुभ कार्यक्रम स्थल • CELEBRATION VENUE</span>
+          </div>
+          <h3 className="venue-name">Raghav Niwas</h3>
+          <div className="venue-address-stack">
+            <p className="venue-address-line">Majiri Road</p>
+            <p className="venue-address-line city">Neemrana</p>
+          </div>
         </div>
 
         {/* Compliments & RSVP */}
