@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import AmbientStars from './components/AmbientStars';
 import HeroWaxSeal from './components/HeroWaxSeal';
 import InvitationCard from './components/InvitationCard';
+import AudioPlayer from './components/AudioPlayer';
 
 export default function App() {
   const [isUnveiled, setIsUnveiled] = useState(false);
@@ -34,6 +35,9 @@ export default function App() {
     <div className={`app-wrapper ${!isUnveiled ? 'screen-locked' : 'screen-scrollable'}`}>
       {/* Floating Canvas Stars in Background */}
       <AmbientStars />
+
+      {/* Auspicious Krishna Flute Audio Controller */}
+      <AudioPlayer isUnveiled={isUnveiled} />
 
       <AnimatePresence mode="wait">
         {!isUnveiled ? (

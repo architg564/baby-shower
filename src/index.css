@@ -1125,3 +1125,84 @@ body::before {
     font-size: 0.6rem;
   }
 }
+
+/* =====================================================================
+   FLOATING AUSPICIOUS MUSIC CONTROLLER
+   ===================================================================== */
+.floating-music-container {
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-music-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(11, 26, 59, 0.85);
+  border: 1.5px solid var(--moon-gold);
+  color: var(--star-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55), 0 0 15px rgba(249, 217, 118, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.floating-music-btn:hover {
+  transform: scale(1.08);
+  border-color: #ffffff;
+  box-shadow: 0 6px 24px rgba(249, 217, 118, 0.65);
+}
+
+.floating-music-btn.playing {
+  border-color: var(--moon-gold);
+  background: radial-gradient(circle at 35% 35%, #152b5e, #0b1a3b);
+  animation: pulseMusicDisc 3s infinite ease-in-out;
+}
+
+.music-wave-bars {
+  position: absolute;
+  top: -8px;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 10px;
+}
+
+.music-wave-bars .bar {
+  width: 2.5px;
+  background: var(--moon-gold);
+  border-radius: 2px;
+  animation: jumpWave 1s infinite ease-in-out;
+}
+.music-wave-bars .bar-1 { height: 6px; animation-delay: 0.1s; }
+.music-wave-bars .bar-2 { height: 10px; animation-delay: 0.3s; }
+.music-wave-bars .bar-3 { height: 7px; animation-delay: 0.2s; }
+
+@keyframes jumpWave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1.2); }
+}
+
+@keyframes pulseMusicDisc {
+  0%, 100% { box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55), 0 0 12px rgba(249, 217, 118, 0.35); }
+  50% { box-shadow: 0 4px 22px rgba(0, 0, 0, 0.65), 0 0 24px rgba(249, 217, 118, 0.65); }
+}
+
+@media (max-width: 600px) {
+  .floating-music-container {
+    bottom: 18px;
+    right: 16px;
+  }
+  .floating-music-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
