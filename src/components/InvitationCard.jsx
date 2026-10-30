@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import VerticalTimeline from './VerticalTimeline';
 import CountdownTimer from './CountdownTimer';
 
@@ -24,37 +24,7 @@ export default function InvitationCard() {
         {/* Top Auspicious Invocations */}
         <header className="card-header">
           <div className="top-deities single-center">
-            <h3 className="deity-shloka-center">॥ श्री गणेशाय नमः ॥</h3>
-          </div>
-
-          {/* Baby Prince Crown Emblem */}
-          <div className="crown-badge">
-            <svg viewBox="0 0 100 80" width="70" height="56">
-              <path
-                d="M10 65 L20 25 L38 45 L50 15 L62 45 L80 25 L90 65 Z"
-                fill="url(#goldGradCard)"
-                stroke="#fff"
-                strokeWidth="1.5"
-                filter="drop-shadow(0 2px 6px rgba(0,0,0,0.4))"
-              />
-              <circle cx="20" cy="22" r="4.5" fill="#fff" stroke="#d4af37" strokeWidth="1.5" />
-              <circle cx="50" cy="12" r="5.5" fill="#5bc0be" stroke="#fff" strokeWidth="1.5" />
-              <circle cx="80" cy="22" r="4.5" fill="#fff" stroke="#d4af37" strokeWidth="1.5" />
-              <ellipse cx="50" cy="65" rx="36" ry="6" fill="#aa771c" />
-              <defs>
-                <linearGradient id="goldGradCard" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#fff2be" />
-                  <stop offset="50%" stopColor="#ffd166" />
-                  <stop offset="100%" stopColor="#c99700" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-
-          <div className="charan-paduka">
-            <span>👣</span>
-            <span>Auspicious Baby Arrival</span>
-            <span>👣</span>
+            <h3 className="deity-shloka-center">॥ Shri Ganeshay Namah ॥</h3>
           </div>
 
           <div className="gold-swirl-divider">
@@ -64,43 +34,22 @@ export default function InvitationCard() {
             <span className="line" />
             <span className="star">✦</span>
           </div>
+
+          <p className="cordial-invitation-lead">You are cordially invited to the</p>
         </header>
 
-        {/* Invitation Text & Hosts */}
+        {/* Grand Headline */}
+        <div className="celebration-headline-container">
+          <h1 className="main-celebration-title">CRADLE CEREMONY</h1>
+          <div className="sub-celebration">OF OUR BABY</div>
+        </div>
+
+        {/* Invitation Text */}
         <div className="invitation-body">
           <p className="divine-blessing-text">
-            With the divine blessings of Lord Krishna, Kuldevi & Respected Ancestors
+            With the blessings of God and the love of our family, we are delighted to
+            invite you to the cradle ceremony of our little one.
           </p>
-
-          <div className="grandparents-block">
-            <span className="role-label">Most Respected Grandparents</span>
-            <h2 className="grandparent-names">
-              Smt. Mithlesh Raghav <span className="name-sep">&</span> Shri Satyabir Singh Raghav
-            </h2>
-          </div>
-
-          <p className="cordial-request">
-            humbly request the honour of your esteemed presence and blessings with your family to
-            celebrate the auspicious
-          </p>
-
-          {/* Grand Headline */}
-          <div className="celebration-headline-container">
-            <div className="sub-celebration">WELCOMING OUR BELOVED NEWBORN BABY BOY</div>
-            <h1 className="main-celebration-title">SHUBH KUAN PUJAN</h1>
-            <div className="hindi-celebration-title">॥ शुभ कुआं पूजन एवं जलवा समारोह ॥</div>
-          </div>
-
-          {/* Parents Block */}
-          <div className="parents-block">
-            <span className="proud-label">Heartily welcomed by the proud parents</span>
-            <h3 className="parent-names">
-              Smt. Preeti Raghav <span className="name-sep">&</span> Shri Gaurav Raghav
-            </h3>
-            <p className="baby-welcome-note">
-              "A sweet bundle of joy has arrived to fill our hearts with laughter and our home with endless love."
-            </p>
-          </div>
         </div>
 
         {/* Auspicious Date Spotlight */}
@@ -108,38 +57,76 @@ export default function InvitationCard() {
           <div className="date-day">WEDNESDAY</div>
           <div className="date-huge-num">04</div>
           <div className="date-month-year">NOVEMBER 2026</div>
-          <div className="date-tithi">Auspicious Muhurat • 4th Nov 2026</div>
+          <div className="date-tithi">Wednesday, 4th November 2026</div>
         </div>
 
-        {/* Vertical Timeline Bar with Quotes */}
+        {/* Vertical Timeline Bar (Havan 10:15 AM | Lunch 1:15 PM | Cradle Ceremony 4:15 PM) */}
         <VerticalTimeline />
+
+        {/* Family Structure Grid */}
+        <div className="family-hierarchy-grid">
+          {/* Great Grandparents */}
+          <div className="family-block">
+            <span className="role-label">Grand Grandparents</span>
+            <h3 className="family-names">
+              Late Saudan Singh Raghav <span className="name-sep">&</span> Late Anarkali Raghav
+            </h3>
+          </div>
+
+          {/* Grandparents Set 1 */}
+          <div className="family-block">
+            <span className="role-label">Grandparents</span>
+            <h3 className="family-names">
+              Shri Satyapal Singh Raghav <span className="name-sep">&</span> Smt. Kusum Raghav
+            </h3>
+          </div>
+
+          {/* Grandparents Set 2 */}
+          <div className="family-block">
+            <span className="role-label">Grandparents</span>
+            <h3 className="family-names">
+              Shri Satyaveer Singh Raghav <span className="name-sep">&</span> Smt. Mithilesh Raghav
+            </h3>
+          </div>
+
+          {/* Parents */}
+          <div className="family-block parents-highlight">
+            <span className="role-label">Parents</span>
+            <h3 className="family-names">
+              Shri Gaurav Raghav <span className="name-sep">&</span> Smt. Preeti Raghav
+            </h3>
+          </div>
+        </div>
 
         {/* Celebration Venue */}
         <div className="venue-showcase-box">
           <div className="venue-label-row">
-            <MapPin size={15} />
-            <span className="venue-label">शुभ कार्यक्रम स्थल • CELEBRATION VENUE</span>
+            <MapPin size={16} />
+            <span className="venue-label">VENUE</span>
           </div>
-          <h3 className="venue-name">Raghav Niwas</h3>
           <div className="venue-address-stack">
-            <p className="venue-address-line">Majiri Road</p>
-            <p className="venue-address-line city">Neemrana</p>
+            <p className="venue-address-line">House No. 3, near Ganesh Mandir,</p>
+            <p className="venue-address-line city">Majri Road, Neemrana</p>
           </div>
         </div>
 
-        {/* Compliments & RSVP */}
-        <div className="compliments-row">
-          <div className="compliments-cell">
-            <strong>R.S.V.P.:</strong> Raghav Family
+        {/* Contact Details */}
+        <div className="contact-showcase-box">
+          <div className="contact-label-row">
+            <Phone size={14} />
+            <span className="contact-label">CONTACT</span>
           </div>
-          <div className="deity-divider">✦</div>
-          <div className="compliments-cell">
-            <strong>With Best Compliments:</strong> Near & Dear Ones of Raghav Family
+          <div className="contact-numbers">
+            <a href="tel:+917906921612">+91 7906921612</a>
+            <span className="phone-sep">|</span>
+            <a href="tel:+919887952718">+91 9887952718</a>
           </div>
         </div>
 
-        <div className="shanti-mantra">
-          ॥ सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः ॥
+        {/* Sign-off */}
+        <div className="warm-regards-section">
+          <p className="regards-title">Warm Regards</p>
+          <h2 className="signature-family">The Raghav Family</h2>
         </div>
 
         {/* Live Countdown */}
