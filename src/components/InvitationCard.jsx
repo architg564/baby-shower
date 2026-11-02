@@ -108,6 +108,15 @@ export default function InvitationCard() {
             <p className="venue-address-line">House No. 3, near Ganesh Mandir,</p>
             <p className="venue-address-line city">Majri Road, Neemrana</p>
           </div>
+          <a
+            href="https://www.google.com/maps/place/27%C2%B059'33.7%22N+76%C2%B022'53.4%22E/@27.9926913,76.3814976,17z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="venue-map-link"
+          >
+            <MapPin size={14} />
+            <span>View on Google Maps</span>
+          </a>
         </div>
 
         {/* Contact Details */}

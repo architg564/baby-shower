@@ -888,6 +888,35 @@ body::before {
   letter-spacing: 1px;
 }
 
+.venue-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, rgba(249, 217, 118, 0.15) 0%, rgba(229, 165, 23, 0.25) 100%);
+  border: 1.5px solid var(--gold-border);
+  border-radius: 30px;
+  color: var(--moon-gold);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 12px rgba(249, 217, 118, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.venue-map-link:hover {
+  background: linear-gradient(135deg, rgba(249, 217, 118, 0.25) 0%, rgba(229, 165, 23, 0.4) 100%);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35), 0 0 20px rgba(249, 217, 118, 0.3);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
 .compliments-row {
   display: flex;
   justify-content: center;
